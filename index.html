@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Bouncing ball 2!</title>
+</head>
+<style>
+
+    body{
+        background-color: blanchedalmond;
+    }
+
+    .ball{
+        background-color: red;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        animation: ball 2s ease-in  0s infinite ;
+        position: absolute;
+        top: 5%;
+        left: 0;
+        z-index: 2;
+        box-shadow: 3px 3px 3px;
+    
+    }
+
+    /* .shadow{
+        background-color: white;
+        height: 85px;
+        width: 85px;
+        animation: shdw 1s ease-in  2s infinite ;
+        position: absolute;
+        border-radius: 50%;
+        top: 40%;
+        right: 80%;
+        z-index: 1;
+
+    }
+
+    .shadow2{
+        background-color: white;
+        height: 85px;
+        width: 85px;
+        animation: shdw2 0.7s ease-in  0.5s infinite ;
+        position: absolute;
+        top: 40%;
+        right: 40%;
+        z-index: 1;
+        border-radius: 50%;
+
+    }
+
+    @keyframes shdw{
+        0%{
+            border-radius: 50%;
+            opacity: 0.2;
+
+
+
+        }
+        50%{
+            background-color: black;
+            top: 80%;
+            right: 70%;
+
+            transform: skew(-25deg);
+            border-radius: 50%;
+            opacity: 0.7;
+
+        }
+
+        100%{
+            top: 40%;
+            right: 70%;
+            border-radius: 50%;
+            opacity: 0.2;
+
+        }
+    }
+
+    @keyframes shdw2{
+        0%{
+            border-radius: 50%;
+            opacity: 0.2;
+
+
+
+        }
+        50%{
+            background-color: black;
+
+            top: 80%;
+            right: 30%;
+            transform: skew(-25deg);
+            border-radius: 50%;
+            opacity: 0.7;
+
+        }
+
+        100%{
+            background-color: black;
+            top: 40%;
+            right: 30%;
+
+            border-radius: 50%;
+            opacity: 0.2;
+
+        }
+    } */
+
+        @keyframes ball{
+            0%{
+
+
+            }
+
+            12.5%{
+                width: 100px;
+
+            }
+            25%{
+
+                width: 150px;
+                border-radius: 50%;
+                top: 80%;
+                left: 20%;
+
+
+            }
+
+            50%{
+                width: 100px;
+                top: 5%;
+                left: 40%;
+
+
+            }
+            62.5%{
+                width: 100px;
+
+
+            }
+
+            75%{
+                width: 150px;
+                border-radius: 50%;
+                top: 80%;
+                left: 70%;
+
+            }
+
+            100%{
+                width: 100px;
+                top: 5%;
+                left: 90%;
+
+
+            }
+        }
+
+
+
+</style>
+<body>
+    <div class="ball"></div>
+    <div class="shadow"></div>
+    <div class="shadow2"></div>
+
+</body>
+</html>
